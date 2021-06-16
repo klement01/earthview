@@ -1,0 +1,14 @@
+# General
+/__pycache__
+*.log
+
+# Python venv
+/Include
+/Lib
+/Scripts
+/pyvenv.cfg
+
+# Pyinstaller
+/dist
+/build
+/earthview.spec
