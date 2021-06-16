@@ -36,7 +36,7 @@ def get_res(url):
     # Downloads URL and checks status.
     # In case of failure, logs error and quits program.
     try:
-        res = requests.get(url, timeout=1.0)
+        res = requests.get(url, timeout=10.0)
     except Exception as e:
         logging.error(f"When connecting to {url}: {format_exc(1)}")
         sys.exit(ExitCode.REQUEST)
